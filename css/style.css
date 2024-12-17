@@ -114,8 +114,20 @@ img {
 
 /* Hero About Section Start */
 #hero_about {
+  position: relative;
+  overflow: hidden;
 }
 
+.hero_about_pink_circle {
+  width: 800px;
+  height: 800px;
+  border-radius: 100%;
+  background: rgba(218, 77, 241, 0.4);
+  filter: blur(600px);
+  position: absolute;
+  top: -500px;
+  right: -500px;
+}
 /* This is Hero */
 #hero_about #hero {
   padding-top: 100px;
@@ -235,6 +247,8 @@ img {
   box-shadow: 0px 36px 105px 0px rgba(43, 56, 76, 0.1);
   /* Gray/White */
   background: rgb(255, 255, 255);
+  margin-bottom: -75px;
+  position: relative;
 }
 #hero_about #about .left_side {
   position: relative;
@@ -1168,10 +1182,10 @@ img {
   align-items: center;
   padding: 88px;
   border-radius: 15px;
-
   box-shadow: 0px 59px 124px 0px rgba(0, 0, 0, 0.12);
-  /* Gray/White */
   background: rgb(255, 255, 255);
+  margin-bottom: -50px;
+  position: relative;
 }
 .contact_us_container .discussion {
   display: flex;
@@ -1472,3 +1486,38 @@ footer {
   text-align: left;
 }
 /* Footer Section End */
+
+/* @media only screen and (max-width: 600px) {
+} */
+
+/* @media only screen and (max-width: 320px) {
+  .blog_card_container {
+    grid-template-columns: 1fr;
+  }
+  .portfolio_card_container {
+    grid-template-columns: 1fr;
+  }
+  #hero_about #hero {
+    flex-direction: column;
+  }
+  #hero_about #about {
+    flex-direction: column;
+  }
+  #hero_about #hero .left_side {
+    width: 100%;
+  }
+  #hero_about #hero .right_side {
+    width: 100%;
+  }
+  .work_process_container {
+    grid-template-columns: 1fr;
+  }
+} */
+
+/* 
+   Responsive
+   Tailwind CSS -> Sohoj
+   Blur
+   Z-Index 
+
+*/
